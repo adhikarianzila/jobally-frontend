@@ -1,17 +1,27 @@
 import React from 'react';
-import {Box,Grid,Typography,Button} from  "@mui/material";
-export default props =>( 
-<Box py={10} bgcolor="secondary.main" color="white">
-<Grid container justify="center">
-<Grid item xs={10}>
-<Box display="flex" justifyContent="space-between">
+import { Box, Grid, Typography, } from "@mui/material";
+import NewModal from '../JobMain/NewModal';
+import image from '../../assests/headerimg.jpg'
 
+export default function Header() {
+    return (
+        <div style={{
+            backgroundImage: `url(${image})`,
 
-<Typography variant="h4">Job Lists here</Typography>
-<Button variant="contained" color='primary' disableElevation>Post a job</Button>
-</Box>
-</Grid>
-</Grid>
+            backgroundSize: "cover",
+            backgroundRepeat: "no repeat"
 
-</Box>
-);
+        }}>
+            <Box py={12} color="white" >
+                <Grid container justify="center">
+                    <Grid item xs={10}>
+                        <Box display="flex" justifyContent="space-between">
+                            <Typography variant="h4">Job Lists here</Typography>
+                            <NewModal />
+                        </Box>
+                    </Grid>
+                </Grid>
+            </Box>
+        </div>
+    )
+}

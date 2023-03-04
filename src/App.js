@@ -10,8 +10,11 @@ import Internship from "./components/pages/Internship";
 import Job from "./components/pages/Job";
 
 
-import Layout from "./components/pages/Layout";
 
+import Layout from "./components/pages/Layout";
+import Middle from "./middle/middle";
+import Mid from "./mid/mid";
+import Footer from "./footer/footer";
 
 
 function App() {
@@ -35,6 +38,9 @@ function App() {
           <Route path="*" element={<h1>Error 404 Page not found !!</h1>} />
         </Routes>
       </BrowserRouter>
+      <Middle/>
+      <Mid/>
+      <Footer/>
     </>
   );
 }

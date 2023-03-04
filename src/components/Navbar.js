@@ -13,12 +13,8 @@ const Navbar = () => {
 
           <Button component={NavLink} to='/internship' style={({ isActive }) => { return { backgroundColor: isActive ? '#6d1b7b' : '' } }} sx={{ color: 'white', textTransform: 'none' }}>Internship</Button>
           <Button component={NavLink} to='/job' style={({ isActive }) => { return { backgroundColor: isActive ? '#6d1b7b' : '' } }} sx={{ color: 'white', textTransform: 'none' }}>Job</Button>
-          
+
           <Button component={NavLink} to='/login' style={({ isActive }) => { return { backgroundColor: isActive ? '#6d1b7b' : '' } }} sx={{ color: 'white', textTransform: 'none' }}>Login/Registration</Button>
-
-
-
-
         </Toolbar>
       </AppBar>
     </Box>
